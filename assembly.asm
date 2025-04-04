@@ -11,9 +11,7 @@ mov al, 'l'
 int 0x10
 mov al, 'l'
 int 0x10
-mov al, 'o'
-int 0x10
-mov al, pc 
+mov al, 'P'
 int 0x10
 
 ; Infinite loop (so the bootloader doesn’t exit)
