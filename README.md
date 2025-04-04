@@ -20,7 +20,12 @@ This will create a disk image that can be used in a virtual machine
 
 Add the disk image as a floppy, and start the system. 
 
-Users should encounter a terminal with a "hello" message at the top right.
+if using a `qemu`, run the following command to run the bootloader:
 
+```
+qemu-system-x86_64 -fda boot.img -boot a -nographic
+```
+
+Users should encounter the bootloader up and running.
 
 [nasm]: https://www.nasm.us/
